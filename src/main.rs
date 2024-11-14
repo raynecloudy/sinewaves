@@ -27,9 +27,7 @@ fn main() {
             }
             if -y as f32 == (a * (b * (x as f32) / 2.0).to_radians().sin()).floor() {
                 let point = (a * (b * (x as f32) / 2.0).to_radians().sin()) - (a * (b * (x as f32) / 2.0).to_radians().sin()).floor();
-                if point < 0.1 {
-                    print!("_");
-                } else if point < 0.2 {
+                if point < 0.2 {
                     print!(",");
                 } else if point < 0.4 {
                     print!(".");
